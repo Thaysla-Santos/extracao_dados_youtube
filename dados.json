@@ -1,40 +1,1226 @@
 {
     "videos": [
         {
-            "videoId": "TaxH7Xtkq-k",
-            "titulo": "QUANTO VALE A SELEÇÃO BRASILEIRA COM O NEYMAR? #shorts",
-            "url": "https://youtube.com/watch?v=TaxH7Xtkq-k",
+            "videoId": "MybyANhNorc",
+            "titulo": "bodão ratiano no termo",
+            "url": "https://youtube.com/watch?v=MybyANhNorc",
             "estatisticas": {
-                "viewCount": "1154",
-                "likeCount": "83",
+                "viewCount": "106249",
+                "likeCount": "12524",
                 "favoriteCount": "0",
-                "commentCount": "4"
+                "commentCount": "245"
             },
-            "scoreComentarios": 0.6194914430379868,
-            "quantidadeComentarios": 4,
+            "scoreComentarios": 0.6409626817703247,
+            "quantidadeComentarios": 100,
             "sentimentos": {
-                "positive": 1,
-                "neutral": 0,
-                "negative": 3
-            }
+                "positive": 18,
+                "neutral": 33,
+                "negative": 49
+            },
+            "comentarios": [
+                {
+                    "autor": "@helt0911",
+                    "texto": "Miiiutooon booodii",
+                    "sentimento": "positive",
+                    "score": 0.8168169260025024
+                },
+                {
+                    "autor": "@DAVIDECAMARGO-p9j",
+                    "texto": "pisca pisca pisca, o veio tava piscano no banho",
+                    "sentimento": "neutral",
+                    "score": 0.5614045858383179
+                },
+                {
+                    "autor": "@mestresaw",
+                    "texto": "Milto, o \"vós\" pode ser utilizado sim no singular, inclusive no Pai Nosso ele é usado no singular sim",
+                    "sentimento": "neutral",
+                    "score": 0.7995641231536865
+                },
+                {
+                    "autor": "@D.stahnke",
+                    "texto": "pisca sofre muito mais no termo do que com todas as merdas que deram com ele",
+                    "sentimento": "negative",
+                    "score": 0.9041865468025208
+                },
+                {
+                    "autor": "@alejandrocuevas7831",
+                    "texto": "Eu com 12 anos vendo o meu pai gritando loucamente a resposta óbvia daqueles \"quiz\" que apareciam em canais duvidosos da tv aberta: 🙄\nEu com quase 30 anos nas costas: É ZINCO MILTO, É ZINCOOOOOO",
+                    "sentimento": "negative",
+                    "score": 0.5502336025238037
+                },
+                {
+                    "autor": "@JhounisSpyne",
+                    "texto": "Dia 1 pedindo pro pixar jogar Disco Elysium",
+                    "sentimento": "neutral",
+                    "score": 0.779388964176178
+                },
+                {
+                    "autor": "@vicenteaugusto4046",
+                    "texto": "PISCA GAMES É O  CARALHO, TODO DIA VENHO DA DISLIKE NESSA PORRA O BAGULHO É SHACORINGA BANDO DE FILHA DA PUTA FICA DANDO IBOPE PRA ELE FICA NESSE CANAL NUTELLINHA DE MERDA, ENQUANTO ISSO ELE DEIXA O SHACORINGAM,, O MELHOR CANAL DE GAMES DO MUNDO JOGANDO AS TRAÇAS, TUDO CULPA DO PUBLICO E DO PISCOLICO GADO, SHACORINGA NESSA PORRA CARALHO",
+                    "sentimento": "negative",
+                    "score": 0.8836385011672974
+                },
+                {
+                    "autor": "@juan_m_marinho",
+                    "texto": "Pedro joga Yakuza; começa pelo Zero, por favor 🙏🏽",
+                    "sentimento": "neutral",
+                    "score": 0.4761935770511627
+                },
+                {
+                    "autor": "@Fellasposting",
+                    "texto": "Pisquinha usando ratão do Fellasposting na tumb do vídeo aí sim irmão.",
+                    "sentimento": "neutral",
+                    "score": 0.48813626170158386
+                },
+                {
+                    "autor": "@jorjicostava4920",
+                    "texto": "toma essa visualização pra financiar seus luxos mirto",
+                    "sentimento": "neutral",
+                    "score": 0.4815942943096161
+                },
+                {
+                    "autor": "@morningstar3189",
+                    "texto": "o magro deve ter mais horas semanais Gerson",
+                    "sentimento": "neutral",
+                    "score": 0.6517015695571899
+                },
+                {
+                    "autor": "@ummissicsaleatorio7282",
+                    "texto": "Eu muto o vídeo toda vez q ele imita bodes",
+                    "sentimento": "neutral",
+                    "score": 0.5294991731643677
+                },
+                {
+                    "autor": "@leonawesome3536",
+                    "texto": "8:28 a tanto tempo eu n via o pisca ganhando tão saborosamente no termo",
+                    "sentimento": "positive",
+                    "score": 0.5229495167732239
+                },
+                {
+                    "autor": "@JoaoPedro-i8v6c",
+                    "texto": "Nunca achei q ele roubava mas o jarra foi mt na cara, mt triste e desapontado",
+                    "sentimento": "negative",
+                    "score": 0.9518137574195862
+                },
+                {
+                    "autor": "@demonjuky",
+                    "texto": "milto fingindo que nao sabe oque é feral",
+                    "sentimento": "negative",
+                    "score": 0.7452956438064575
+                },
+                {
+                    "autor": "@lincoln4220",
+                    "texto": "3:18 obrigado por me mencionar mais uma vez milton",
+                    "sentimento": "positive",
+                    "score": 0.6979270577430725
+                },
+                {
+                    "autor": "@vagnermuguerza",
+                    "texto": "Nunca fui do time do \"leu\", mas esse último quarteto pqp... aquele \"jarra\" tirou do nada e nem comemorou",
+                    "sentimento": "negative",
+                    "score": 0.7442596554756165
+                },
+                {
+                    "autor": "@inercia8897",
+                    "texto": "9:51 o cara do chat mais burro que o milton achando q sabe alguma coisa",
+                    "sentimento": "negative",
+                    "score": 0.8447352647781372
+                },
+                {
+                    "autor": "@DenisdosSantos-z9n",
+                    "texto": "full nelson",
+                    "sentimento": "neutral",
+                    "score": 0.4138832092285156
+                },
+                {
+                    "autor": "@leorocha7988",
+                    "texto": "Leu",
+                    "sentimento": "neutral",
+                    "score": 0.3813260495662689
+                },
+                {
+                    "autor": "@stormguy9568",
+                    "texto": "🐐🐐🐐🐐🐐🐐🐐",
+                    "sentimento": "neutral",
+                    "score": 0.4067281484603882
+                },
+                {
+                    "autor": "@pedroxavier1376",
+                    "texto": "Eu achava ruim o irmão do Felipe Neto imitando foca mas tô aí assistindo um bigodudo imitando bode",
+                    "sentimento": "negative",
+                    "score": 0.8185803294181824
+                },
+                {
+                    "autor": "@dogaspog",
+                    "texto": "o cara tá até hj acreditando na fake de que não pode cair verbo conjugado",
+                    "sentimento": "negative",
+                    "score": 0.7895335555076599
+                },
+                {
+                    "autor": "@raimundoneto1720",
+                    "texto": "MILTON \n\nBODE",
+                    "sentimento": "negative",
+                    "score": 0.47143569588661194
+                },
+                {
+                    "autor": "@Gabrieldiazzz",
+                    "texto": "Chega de termo Milton, tá chato já.",
+                    "sentimento": "negative",
+                    "score": 0.9395573139190674
+                },
+                {
+                    "autor": "@matheusmoraes9453",
+                    "texto": "chat do cara é tão cancerigeno que a cada 5 mensagens é um spam",
+                    "sentimento": "negative",
+                    "score": 0.8919773101806641
+                },
+                {
+                    "autor": "@Gloxyss",
+                    "texto": "Meu Bode foi deslavado",
+                    "sentimento": "negative",
+                    "score": 0.9243534207344055
+                },
+                {
+                    "autor": "@angelocesar6225",
+                    "texto": "Peguem o cara qje fez o cara virar uma morsa pra transformar o pisca em um bode, já tá imitando um perfeitamente 😂",
+                    "sentimento": "negative",
+                    "score": 0.3913353383541107
+                },
+                {
+                    "autor": "@angelocesar6225",
+                    "texto": "7:06 pensou o msm que eu",
+                    "sentimento": "neutral",
+                    "score": 0.5588054060935974
+                },
+                {
+                    "autor": "@a.k.j627",
+                    "texto": "Pelo geito continua seno o booodeeeeee",
+                    "sentimento": "positive",
+                    "score": 0.5979655981063843
+                },
+                {
+                    "autor": "@FelipeLorenzoAndradedeOliveira",
+                    "texto": "Pisca aprendendo a existência dos pronomes sem estar no contexto de pronome neutro",
+                    "sentimento": "neutral",
+                    "score": 0.6414906978607178
+                },
+                {
+                    "autor": "@kyosh7774",
+                    "texto": "Se o milton nascesse autista e nao soubesse ler, o termo nao teria público muito menos acertos",
+                    "sentimento": "negative",
+                    "score": 0.722645103931427
+                },
+                {
+                    "autor": "@anarute077",
+                    "texto": "acho que seria um vídeo muito bom o milto passando uns dias CLT só pela exp, igual ao vídeo de ficar sem celular e rede social",
+                    "sentimento": "positive",
+                    "score": 0.5159811973571777
+                },
+                {
+                    "autor": "@kelvingamer6164",
+                    "texto": "Pisca tem q joga um Diablo 4",
+                    "sentimento": "neutral",
+                    "score": 0.4939649701118469
+                },
+                {
+                    "autor": "@heraclytoo",
+                    "texto": "morre pelas palavras\nse contradiz\nvou logo resolver\ndestravei\nto na bala\ncorpo no chao\né pouco pra entender\npoker face de clava\nquem muito fala so quer entreter\nfodo fakes\nfato\nfatal nas linhas\nnunca foi rap\nvou puxar no resumo\ndo suco sou sumo\nassumo desprezo\nnao somam\nso sugam\nsente o descarrego\nfuneral macabro\nsinfonia demo\ndemoniaco\nefeito domino\nkarma\nmeu eu lirico",
+                    "sentimento": "neutral",
+                    "score": 0.48850101232528687
+                },
+                {
+                    "autor": "@_lara1949",
+                    "texto": "Ta fazendo oq em niteroi viado",
+                    "sentimento": "negative",
+                    "score": 0.7801453471183777
+                },
+                {
+                    "autor": "@eduardoborges848",
+                    "texto": "Niterói mentioned xD",
+                    "sentimento": "positive",
+                    "score": 0.4848427176475525
+                },
+                {
+                    "autor": "@relacionomia",
+                    "texto": "Não tem nenhuma letra aqui = T A N E 🤦🏽‍♂",
+                    "sentimento": "negative",
+                    "score": 0.7956457138061523
+                },
+                {
+                    "autor": "@crybabymoonwalktransversal",
+                    "texto": "vamos fazer meiose, bode??",
+                    "sentimento": "neutral",
+                    "score": 0.6028112769126892
+                },
+                {
+                    "autor": "@relacionomia",
+                    "texto": "O cara manda um shalom, saudação HEBRAICA pra um libanês que tá sendo atacado por israelenses heuhehuehue",
+                    "sentimento": "negative",
+                    "score": 0.5531842112541199
+                },
+                {
+                    "autor": "@Faltadoquefazer555",
+                    "texto": "Amo vocês KAKAKAKKAKAKAKAKKAKA",
+                    "sentimento": "positive",
+                    "score": 0.7242199778556824
+                },
+                {
+                    "autor": "@Nielsz_s",
+                    "texto": "Do nada minha cidade sendo mencionada kkkkkkkkkkkk",
+                    "sentimento": "neutral",
+                    "score": 0.507043182849884
+                },
+                {
+                    "autor": "@georgesoroos",
+                    "texto": "Vai bodão",
+                    "sentimento": "negative",
+                    "score": 0.3858516812324524
+                },
+                {
+                    "autor": "@zanzawave",
+                    "texto": "ratiou piá",
+                    "sentimento": "negative",
+                    "score": 0.4380287528038025
+                },
+                {
+                    "autor": "@danielevangelista3898",
+                    "texto": "Milton tira a câmera da frente do termo",
+                    "sentimento": "negative",
+                    "score": 0.49165070056915283
+                },
+                {
+                    "autor": "@mr_mikebr3544",
+                    "texto": "Mano se pode começar com furia ajudaria muito 🎉",
+                    "sentimento": "positive",
+                    "score": 0.7442196011543274
+                },
+                {
+                    "autor": "@jao6261",
+                    "texto": "Milgton bogde",
+                    "sentimento": "neutral",
+                    "score": 0.4685635566711426
+                },
+                {
+                    "autor": "@gaelds.-.0",
+                    "texto": "8:26 Ai como é gostoso ouvir isso aqui 🐐🐐🐐🐐🔥🔥🔥",
+                    "sentimento": "positive",
+                    "score": 0.9107359647750854
+                },
+                {
+                    "autor": "@helenapifferdasilva",
+                    "texto": "Sim, ele voltou",
+                    "sentimento": "neutral",
+                    "score": 0.6272808313369751
+                },
+                {
+                    "autor": "@emizikka",
+                    "texto": "meu país Roraima sendo mencionado, saudades",
+                    "sentimento": "negative",
+                    "score": 0.7040008306503296
+                },
+                {
+                    "autor": "@pereira005",
+                    "texto": "Dia 1 pedindo pro milto jogar geoguessr, acho q dá mais adrenalina ao acertar doq termo",
+                    "sentimento": "positive",
+                    "score": 0.5992094278335571
+                },
+                {
+                    "autor": "@marianna_pc",
+                    "texto": "palavras de afirmação: vai bodão",
+                    "sentimento": "neutral",
+                    "score": 0.48703935742378235
+                },
+                {
+                    "autor": "@João_Manfio",
+                    "texto": "Onde tem onça e droga pode ter certeza que o Matuê vai tá lá.",
+                    "sentimento": "neutral",
+                    "score": 0.6933011412620544
+                },
+                {
+                    "autor": "@Naoki_zz",
+                    "texto": "Que agonia dessas barras de chocolate tortas na parede morra bode lavado",
+                    "sentimento": "negative",
+                    "score": 0.9603926539421082
+                },
+                {
+                    "autor": "@cst4767",
+                    "texto": "bode ta ficando cabeçudo ou careca ?",
+                    "sentimento": "negative",
+                    "score": 0.7404554486274719
+                },
+                {
+                    "autor": "@vitoiévsky",
+                    "texto": "miiiiltooooon bodiiiii",
+                    "sentimento": "positive",
+                    "score": 0.40013638138771057
+                },
+                {
+                    "autor": "@Davii-656",
+                    "texto": "Acho q o milto ta com um vibrador no cu e lendo as palavras com código morse",
+                    "sentimento": "negative",
+                    "score": 0.5922226905822754
+                },
+                {
+                    "autor": "@talys9017",
+                    "texto": "10:46 *EU* NÃO GOSTO DE LIBANÊS?! ONTEM MESMO BATI UMA PRA MIA KHALIFA\nmemes e piadas galera e sorvete galera",
+                    "sentimento": "negative",
+                    "score": 0.45593684911727905
+                },
+                {
+                    "autor": "@talys9017",
+                    "texto": "4:50 editor burro deu o zoom no lugar errado",
+                    "sentimento": "negative",
+                    "score": 0.8620712161064148
+                },
+                {
+                    "autor": "@Oguioliveiraa",
+                    "texto": "Bora vê o cu dele",
+                    "sentimento": "negative",
+                    "score": 0.4886476993560791
+                },
+                {
+                    "autor": "@matheus77963",
+                    "texto": "ele pensando pra crc de podia posso e o p já tinha sido usado e não era, esse é o nosso bodi",
+                    "sentimento": "negative",
+                    "score": 0.5847684144973755
+                },
+                {
+                    "autor": "@AndrywTht",
+                    "texto": "krl q bodão fdp",
+                    "sentimento": "negative",
+                    "score": 0.9265004992485046
+                },
+                {
+                    "autor": "@shamash8441",
+                    "texto": "prova pa nois que vc nao le o chat e coloca uma camera filmando sua visao",
+                    "sentimento": "neutral",
+                    "score": 0.5636460781097412
+                },
+                {
+                    "autor": "@caponyi",
+                    "texto": "quando ele começou a reagir o profissional do sex0 eu já saí sa live, não tô transando carai",
+                    "sentimento": "negative",
+                    "score": 0.6915953755378723
+                },
+                {
+                    "autor": "@Filipe1607",
+                    "texto": "\"vosso e nosso é a mesma coisa\" 😭",
+                    "sentimento": "negative",
+                    "score": 0.8585381507873535
+                },
+                {
+                    "autor": "@sevenlaws",
+                    "texto": "Ele cortou o final pra n levar processo dos monges KKKKKKKKKKKKKKKK",
+                    "sentimento": "negative",
+                    "score": 0.5528513789176941
+                },
+                {
+                    "autor": "@playersolo1907",
+                    "texto": "O bode esta descendo a montanha e se perdendo em sua grandeza",
+                    "sentimento": "negative",
+                    "score": 0.8819708228111267
+                },
+                {
+                    "autor": "@IagoMedeiros1",
+                    "texto": "bo-de",
+                    "sentimento": "negative",
+                    "score": 0.6223371028900146
+                },
+                {
+                    "autor": "@dimi_lol",
+                    "texto": "2:32 Niterói mencionado",
+                    "sentimento": "neutral",
+                    "score": 0.8673502802848816
+                },
+                {
+                    "autor": "@David_Felipe_Koch",
+                    "texto": "Meia noite o cara jogando termo ao inves de pixelsungeon. Vai deixar minha mão morrer de proposito",
+                    "sentimento": "negative",
+                    "score": 0.8528115153312683
+                },
+                {
+                    "autor": "@kay_chin",
+                    "texto": "Me impressiona como esse miserável acaba o vídeo, não tem aviso, NÃO TEM NADA, só acaba",
+                    "sentimento": "negative",
+                    "score": 0.940196692943573
+                },
+                {
+                    "autor": "@Cabelera_Gameplays",
+                    "texto": "Imagina você indo apresentar o namoradinho pra família: Oi pai, oi mãe, esse aqui é o NELSON KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+                    "sentimento": "neutral",
+                    "score": 0.6247543096542358
+                },
+                {
+                    "autor": "@Cabelera_Gameplays",
+                    "texto": "Mano o maluco come Xawarma na mesa do Pc com os molhos do lado do teclado kkkkkkkkkkk bixo doido depois fica tudo grudento pegajoso",
+                    "sentimento": "negative",
+                    "score": 0.7898532748222351
+                },
+                {
+                    "autor": "@MulherRato",
+                    "texto": "Titititi",
+                    "sentimento": "negative",
+                    "score": 0.41410672664642334
+                },
+                {
+                    "autor": "@luke7585",
+                    "texto": "eu fiz esse segundo, já sabia (se lasque minha ex covarde que vê os videos do milton)",
+                    "sentimento": "negative",
+                    "score": 0.6013811826705933
+                },
+                {
+                    "autor": "@blvdwounds",
+                    "texto": "ponhe de ponhar",
+                    "sentimento": "neutral",
+                    "score": 0.39166882634162903
+                },
+                {
+                    "autor": "@its_frost__2568",
+                    "texto": "LIBANO MENCIONADOOOOO🇱🇧🇱🇧🇱🇧🇱🇧🇱🇧🇱🇧",
+                    "sentimento": "negative",
+                    "score": 0.5359569787979126
+                },
+                {
+                    "autor": "@Branquiada",
+                    "texto": "salve para as crocheteiras",
+                    "sentimento": "neutral",
+                    "score": 0.4012964069843292
+                },
+                {
+                    "autor": "@vitoriatcavalcante",
+                    "texto": "bom assistir o milto na terapia ocupacional",
+                    "sentimento": "positive",
+                    "score": 0.5541272163391113
+                },
+                {
+                    "autor": "@ctrl7_Pedro",
+                    "texto": "Shalom, bode",
+                    "sentimento": "negative",
+                    "score": 0.4340009093284607
+                },
+                {
+                    "autor": "@pedropeido1143",
+                    "texto": "É engraçado que ele ficou melhor na imitação de bodes com o tempo.",
+                    "sentimento": "positive",
+                    "score": 0.42338597774505615
+                },
+                {
+                    "autor": "@gremori.",
+                    "texto": "Gente essa live é de quando ele ainda era vivo?😢",
+                    "sentimento": "negative",
+                    "score": 0.7336153984069824
+                },
+                {
+                    "autor": "@PédePanoMtTriste",
+                    "texto": "Dia 8 pedindo para o apresentador do Pisca News jogar The Binding of Isaac",
+                    "sentimento": "neutral",
+                    "score": 0.8644000291824341
+                },
+                {
+                    "autor": "@LuisFSZ",
+                    "texto": "Esse último quarteto ele bodou demais slk, o chat foi moggado",
+                    "sentimento": "negative",
+                    "score": 0.8317263126373291
+                },
+                {
+                    "autor": "@Lucas_Pacelli",
+                    "texto": "pronto, virou canal de termo agora? se liga parsa, ta no olho da kobra ja",
+                    "sentimento": "negative",
+                    "score": 0.6133837699890137
+                },
+                {
+                    "autor": "@Vitortutuxo",
+                    "texto": "Meu sonho é o Pisca ser banido do Termo e de todos os outros joguinhos de palavra, pra ele parar de perder tempo com essa merda e jogar jogos de verdade pra esse canal",
+                    "sentimento": "negative",
+                    "score": 0.9049382209777832
+                },
+                {
+                    "autor": "@joaopedrosampaio3463",
+                    "texto": "6:40 esse trovão pela metade não é boa coisa",
+                    "sentimento": "negative",
+                    "score": 0.9055954813957214
+                },
+                {
+                    "autor": "@gustavosousa8966",
+                    "texto": "Adorei a sequência do símio Milton concebendo o conceito de pronome possessivo kkkkkkkkkkk",
+                    "sentimento": "positive",
+                    "score": 0.7192174792289734
+                },
+                {
+                    "autor": "@guilhermefranca3780",
+                    "texto": "18:39 67%",
+                    "sentimento": "neutral",
+                    "score": 0.8056981563568115
+                },
+                {
+                    "autor": "@EuMuliro-os8gd",
+                    "texto": "Nossa Bodão",
+                    "sentimento": "positive",
+                    "score": 0.3901769518852234
+                },
+                {
+                    "autor": "@jeovanacomj9453",
+                    "texto": "Gostei q o editor não cortou as bobagens que o pisca conversa com o chat, ficou mais dinâmico e menos seco 👍",
+                    "sentimento": "positive",
+                    "score": 0.44681984186172485
+                },
+                {
+                    "autor": "@tigrebosta",
+                    "texto": "beeeeeeeh",
+                    "sentimento": "positive",
+                    "score": 0.3745864927768707
+                },
+                {
+                    "autor": "@Vinicruz474",
+                    "texto": "Papo 10 vou virar monge",
+                    "sentimento": "negative",
+                    "score": 0.6427359580993652
+                },
+                {
+                    "autor": "@Curador-k6w",
+                    "texto": "milton nascimento",
+                    "sentimento": "neutral",
+                    "score": 0.5686286687850952
+                },
+                {
+                    "autor": "@Gaabzu",
+                    "texto": "nesse pilha ele leu p krl KKKKKKK",
+                    "sentimento": "neutral",
+                    "score": 0.4350162446498871
+                },
+                {
+                    "autor": "@vmedei",
+                    "texto": "\"tá mas tem aquela regra...\" KKKKKKKKKKKKK o bixinho",
+                    "sentimento": "neutral",
+                    "score": 0.5695873498916626
+                },
+                {
+                    "autor": "@Daph203",
+                    "texto": "Saudades milto, poste mais",
+                    "sentimento": "negative",
+                    "score": 0.7052963972091675
+                },
+                {
+                    "autor": "@kiesztw",
+                    "texto": "4:49 editor chapando no zoom",
+                    "sentimento": "neutral",
+                    "score": 0.5436276793479919
+                },
+                {
+                    "autor": "@TripleLemon",
+                    "texto": "17:38 neste exato segundo onde ele percebeu o erro, automaticamente meu cérebro completou com o \"mas tem aquela regra\" kkkkkkkkkkkkkkkkkkkkkk",
+                    "sentimento": "neutral",
+                    "score": 0.584197461605072
+                },
+                {
+                    "autor": "@dzy127",
+                    "texto": "MILTOOOON BODEEE",
+                    "sentimento": "positive",
+                    "score": 0.5688815712928772
+                }
+            ]
         },
         {
-            "videoId": "q6HPkWlko18",
-            "titulo": "Os ÚNICOS 15 JEITOS de GANHAR DINHEIRO COM IA em 2026",
-            "url": "https://youtube.com/watch?v=q6HPkWlko18",
+            "videoId": "J_TMKiEuqUs",
+            "titulo": "magrão farmando umas almas 👻#33",
+            "url": "https://youtube.com/watch?v=J_TMKiEuqUs",
             "estatisticas": {
-                "viewCount": "873",
-                "likeCount": "89",
+                "viewCount": "50306",
+                "likeCount": "4716",
                 "favoriteCount": "0",
-                "commentCount": "7"
+                "commentCount": "146"
             },
-            "scoreComentarios": 0.5896369636058807,
-            "quantidadeComentarios": 5,
+            "scoreComentarios": 0.6341587747495199,
+            "quantidadeComentarios": 97,
             "sentimentos": {
-                "positive": 1,
-                "neutral": 2,
-                "negative": 2
-            }
+                "positive": 16,
+                "neutral": 48,
+                "negative": 33
+            },
+            "comentarios": [
+                {
+                    "autor": "@dark_vito",
+                    "texto": "Já dropou dnv 😪",
+                    "sentimento": "negative",
+                    "score": 0.8920121192932129
+                },
+                {
+                    "autor": "@Xjuninho0",
+                    "texto": "Milton, para de sofrer, pode upar mais o personagem e pega o melhor martelo colossal do jogo, o Esmagador de Gigantes, ele tá no começo de Platu Altus na carroça do lado do lagartão podre gigante. Reseta a sua Build pra pura força e pare de sofrer, joge pelado só com martelo na mão dado hit kill em quase todo mundo, se o Boss apesar só chamar o Magrinho e já era, essa marreta q vc tá usando aí é só começo do jogo, não presta mais, não era pra nem tá upando mais ela...\nIsso se vc não quiser mais usar a espada do Maliket q tu já tem aí q também é bem boa mais tem q ter mais leitura pra usar...\nDa pra combinar os dois martelos o Esmagador e o da fornalha q vc já tem, faz um dual com os dos q eje da um ataque forte muito rápido q estuna os mob se não matar...\nDesiste do gabe não, tem a Delícia da DLC logo quando vc mata o Mogador lá...",
+                    "sentimento": "neutral",
+                    "score": 0.4679194390773773
+                },
+                {
+                    "autor": "@nh_choc4456",
+                    "texto": "Espero q tome mais um processinho pra vc jogar a DLC 😇",
+                    "sentimento": "neutral",
+                    "score": 0.4996587038040161
+                },
+                {
+                    "autor": "@gh0stx64",
+                    "texto": "bom mesmo quando ele faz a consequência de álcool  eu acompanho ele pagando nos cole daqui 🤪😂",
+                    "sentimento": "neutral",
+                    "score": 0.5049872398376465
+                },
+                {
+                    "autor": "@Luaaaz",
+                    "texto": "Pode apostar que ele vai demorar uns 4 messes pra postar novos episódios depois que acabar a mineração do editor",
+                    "sentimento": "neutral",
+                    "score": 0.6488964557647705
+                },
+                {
+                    "autor": "@keiki2v408",
+                    "texto": "5:43 n é pisca olha esse chat te levando pro mal caminho",
+                    "sentimento": "negative",
+                    "score": 0.8920443058013916
+                },
+                {
+                    "autor": "@CaduGato-z3f",
+                    "texto": "Pisca, joga Stay of the house",
+                    "sentimento": "neutral",
+                    "score": 0.7181069254875183
+                },
+                {
+                    "autor": "@tupi999",
+                    "texto": "petição pra jgr o resident evil requiem",
+                    "sentimento": "neutral",
+                    "score": 0.5732589960098267
+                },
+                {
+                    "autor": "@ryantrento",
+                    "texto": "Farmei muito aí com a espada do radahn",
+                    "sentimento": "negative",
+                    "score": 0.3705954849720001
+                },
+                {
+                    "autor": "@eliveltonbecker",
+                    "texto": "arexa abri mostre",
+                    "sentimento": "neutral",
+                    "score": 0.3656134307384491
+                },
+                {
+                    "autor": "@DannTatt",
+                    "texto": "0:50\n\nPapo reto. Se embebedar por causa de morte é a coisa que mais estraga a experiência",
+                    "sentimento": "negative",
+                    "score": 0.9198731184005737
+                },
+                {
+                    "autor": "@igorelias3495",
+                    "texto": "voltou a fazer conteúdo de homem",
+                    "sentimento": "neutral",
+                    "score": 0.7838510870933533
+                },
+                {
+                    "autor": "@ViniciusSantos-cz5sw",
+                    "texto": "Magrão farmando aura 67",
+                    "sentimento": "neutral",
+                    "score": 0.6480611562728882
+                },
+                {
+                    "autor": "@Xjuninho0",
+                    "texto": "cara essa area do mogh tem o melhor farm de runas do game e glith q ainda funciona, testa ai e faz um videos mostrando pra nois,  ai vc ja deixa po magrão preparadissimo pra dlc q ja é quando derrota o lord mogador, tem tutorial no tube ai so procura rapidao",
+                    "sentimento": "neutral",
+                    "score": 0.569713294506073
+                },
+                {
+                    "autor": "@ocryptoverso99",
+                    "texto": "Aonde está a live completa ?",
+                    "sentimento": "neutral",
+                    "score": 0.886300265789032
+                },
+                {
+                    "autor": "@TonLaitier",
+                    "texto": "cadê o video de pixel dungeon mitinho?",
+                    "sentimento": "negative",
+                    "score": 0.5510715842247009
+                },
+                {
+                    "autor": "@maurylioalves1752",
+                    "texto": "Já vi o vod da Vossa Magreza, só tô passando aq pra deixar o like bacanudo e a view, bora jogar mais Elden Ring pisca? A jornada do Magro é pika demais😊",
+                    "sentimento": "positive",
+                    "score": 0.8804262280464172
+                },
+                {
+                    "autor": "@CortezxAnimes",
+                    "texto": "Quem diria que se ele fizesse um corte da live jogando um jogo que parou a mais de 2 anos ele ganharia views.",
+                    "sentimento": "neutral",
+                    "score": 0.6131792664527893
+                },
+                {
+                    "autor": "@tamancotamanco",
+                    "texto": "Joga logo Resident Evil Requiem, plmds",
+                    "sentimento": "negative",
+                    "score": 0.4297317564487457
+                },
+                {
+                    "autor": "@oPenhaz",
+                    "texto": "Dia 2 pedindo para o piscante jogar o FNAF pizzaria simulator, logo no melhor ele dropou a série (como sempre)",
+                    "sentimento": "neutral",
+                    "score": 0.5088751912117004
+                },
+                {
+                    "autor": "@bagaiaaa",
+                    "texto": "mds cara, falta só 2 bosses e esse bode calvo fica inventando de ir atrás de Mohgg vsfd",
+                    "sentimento": "negative",
+                    "score": 0.8327727317810059
+                },
+                {
+                    "autor": "@shiny8730",
+                    "texto": "Dê para o homem seu magrinho e veja sua verdadeira face.",
+                    "sentimento": "neutral",
+                    "score": 0.6987511515617371
+                },
+                {
+                    "autor": "@lightyaghami421",
+                    "texto": "Se o Milton matar o Boss final da dlc eu arrumo um emprego",
+                    "sentimento": "negative",
+                    "score": 0.7225961089134216
+                },
+                {
+                    "autor": "@Lucca.Irineu",
+                    "texto": "Alanzoka zerou enquanto sonegava impostos",
+                    "sentimento": "negative",
+                    "score": 0.5011228919029236
+                },
+                {
+                    "autor": "@danilobertozzo",
+                    "texto": "Eu não sabia que era possível alguém ser tão ruim no Eldas",
+                    "sentimento": "negative",
+                    "score": 0.9291871786117554
+                },
+                {
+                    "autor": "@varusgamer7271",
+                    "texto": "Pisca ta pobre mesmo ate voltou a farma com magrao",
+                    "sentimento": "negative",
+                    "score": 0.9075914025306702
+                },
+                {
+                    "autor": "@bostinhaplayboy8726",
+                    "texto": "Google.com",
+                    "sentimento": "neutral",
+                    "score": 0.839716911315918
+                },
+                {
+                    "autor": "@Hooty_PlayBR-h2j",
+                    "texto": "Pisca demorou tanto que já alcancei a gnose faz tempo..",
+                    "sentimento": "positive",
+                    "score": 0.3968164324760437
+                },
+                {
+                    "autor": "@Eu_niox",
+                    "texto": "O cara tava full com a pika de porco agr só sobrou o zoio na mente do caba",
+                    "sentimento": "negative",
+                    "score": 0.7274245619773865
+                },
+                {
+                    "autor": "@gabcionantemontemezzo2273",
+                    "texto": "Tudo começou a se acabar quando tu abraçou a Chama Frenética mitinho. Para de tentar matar esse passarinho que é real forte igual boss sendo q vc pode so sair dando pinote e matar o Máscara Branca sem Nome (tem que matar 3 invasões dele nesse mapa). Anda pela beirada, encostado no muro do despenhadeiro. tmj dropa jogo",
+                    "sentimento": "negative",
+                    "score": 0.8263086080551147
+                },
+                {
+                    "autor": "@Yoshimee",
+                    "texto": "era só uma farmadinha e eu dormia tranquilo",
+                    "sentimento": "neutral",
+                    "score": 0.5758112072944641
+                },
+                {
+                    "autor": "@cacatualeprosa",
+                    "texto": "🗣🗣 AREXA!",
+                    "sentimento": "neutral",
+                    "score": 0.41244903206825256
+                },
+                {
+                    "autor": "@jailsonmendes7314",
+                    "texto": "Agora poderei voltar a bater uma olhando seu vídeo",
+                    "sentimento": "positive",
+                    "score": 0.7290861010551453
+                },
+                {
+                    "autor": "@israelvitor7148",
+                    "texto": "Magroo tá muito mercenário, nem parece que essa porra é desnutrida",
+                    "sentimento": "negative",
+                    "score": 0.9503593444824219
+                },
+                {
+                    "autor": "@Major_Cnr",
+                    "texto": "lvl 150 farmando alma 😅😅 - Esse nível já ta bom até o fim da DLC, arruma a build que resolve",
+                    "sentimento": "neutral",
+                    "score": 0.5634738206863403
+                },
+                {
+                    "autor": "@GabrielTusi",
+                    "texto": "cara ta com build de força com uma arma que escala com dex e fé ai foda milton volta pro piru de porco",
+                    "sentimento": "negative",
+                    "score": 0.5861905217170715
+                },
+                {
+                    "autor": "@mitchsz",
+                    "texto": "Sobra nem o clit do pássaro vermelho pro beta mesmo",
+                    "sentimento": "negative",
+                    "score": 0.6711723208427429
+                },
+                {
+                    "autor": "@vegito5437",
+                    "texto": "finalmente o cabra descobriu a existencia do Mohg. Quero ver oq q o magraum vai fzr pra moggar o Mohggador",
+                    "sentimento": "neutral",
+                    "score": 0.44747212529182434
+                },
+                {
+                    "autor": "@WillTNoob",
+                    "texto": "e gow2 dublado pelo str vai trazer quando",
+                    "sentimento": "neutral",
+                    "score": 0.8726187348365784
+                },
+                {
+                    "autor": "@lucasmars6872",
+                    "texto": "Ele nao tem a lagrima pra cancela o ritual do mohg a luta nao vai ser divertida pro milton",
+                    "sentimento": "negative",
+                    "score": 0.8816794753074646
+                },
+                {
+                    "autor": "@tarsisalves1968",
+                    "texto": "O cara decidiu terminar o game, o abandona games pqp",
+                    "sentimento": "negative",
+                    "score": 0.9062091708183289
+                },
+                {
+                    "autor": "@jao7658",
+                    "texto": "Já Bora próxima live do magrão?????",
+                    "sentimento": "neutral",
+                    "score": 0.8203510642051697
+                },
+                {
+                    "autor": "@arthas236",
+                    "texto": "Episodio filler rapaziada pode pular",
+                    "sentimento": "neutral",
+                    "score": 0.6670125722885132
+                },
+                {
+                    "autor": "@arthas236",
+                    "texto": "Ninguem vai avisar o Milton que esse chapeu reduz o dano dele?",
+                    "sentimento": "negative",
+                    "score": 0.7597333788871765
+                },
+                {
+                    "autor": "@david.167x",
+                    "texto": "pisca, jogo dahora pra vc se aventurar Blasphemous",
+                    "sentimento": "positive",
+                    "score": 0.5034581422805786
+                },
+                {
+                    "autor": "@morningstar3189",
+                    "texto": "MAGRO, MAGRO, MAAAAAAAAAAAAAAAGROOOOOOOOOO",
+                    "sentimento": "positive",
+                    "score": 0.42382216453552246
+                },
+                {
+                    "autor": "@MrGunmaster64",
+                    "texto": "Ninguém desse público burro do Orochi pra avisar que A MÁSCARA QUE ELE ESTÁ USANDO REDUZ O ATAQUE FÍSICO QUE ELE CAUSA???? \n\nOROCHI, LÊ A DESCRIÇÃO COMPLETA DO QUE VOCÊ USA, VC TEM ITENS BEM FORTES NO SEU INVENTÁRIO\n\ncaixa alta p ele poder ver",
+                    "sentimento": "negative",
+                    "score": 0.866141676902771
+                },
+                {
+                    "autor": "@Technondz",
+                    "texto": "O yt traduziu o título do video pra inglês, e foi de magrão pra \"Skinny guy\"",
+                    "sentimento": "neutral",
+                    "score": 0.7293089032173157
+                },
+                {
+                    "autor": "@jog4220",
+                    "texto": "Zera saporra magro estamos todos dentro de voce",
+                    "sentimento": "negative",
+                    "score": 0.4876975119113922
+                },
+                {
+                    "autor": "@gbrgoxtoso",
+                    "texto": "será se o magrão vai jogar a dlc?",
+                    "sentimento": "neutral",
+                    "score": 0.7593294382095337
+                },
+                {
+                    "autor": "@jeovanacomj9453",
+                    "texto": "Acaba logo esse jogo pra jogar um jogo de storyline que tem fim",
+                    "sentimento": "negative",
+                    "score": 0.691567599773407
+                },
+                {
+                    "autor": "@chapuletafc8456",
+                    "texto": "Alanzoka zerou esse jogo enquanto fazia o parto do filho dele",
+                    "sentimento": "negative",
+                    "score": 0.7138020992279053
+                },
+                {
+                    "autor": "@AdrianoSantos.",
+                    "texto": "\"Me da o clitóris de passarinho seu, vai\"",
+                    "sentimento": "neutral",
+                    "score": 0.46098044514656067
+                },
+                {
+                    "autor": "@PédePanoMtTriste",
+                    "texto": "Dia 7 solicitando ao Dr. Milton jogar The Binding of Isaac.",
+                    "sentimento": "neutral",
+                    "score": 0.8299394249916077
+                },
+                {
+                    "autor": "@angusyoung6661",
+                    "texto": "A verdade dói, mas às vezes eu penso em \"ME CHAMA DE MAGRAAAUM\" na rua, no ônibus, no trabalho... E eu sorreio um sorreso largo",
+                    "sentimento": "negative",
+                    "score": 0.5819287896156311
+                },
+                {
+                    "autor": "@fabriciobelarmino2852",
+                    "texto": "porra e de hoje, karai orochinho sei que e impossivel mas manda um feliz aniversario opa mim seu gostyoso",
+                    "sentimento": "positive",
+                    "score": 0.40477195382118225
+                },
+                {
+                    "autor": "@MuriloFaria-u8s",
+                    "texto": "Não costumo comentar, mas esse vídeo merece KKK! Tô usando a buug o do Felipe e o resultado é insano. 30 virou 426 rapidinho!",
+                    "sentimento": "positive",
+                    "score": 0.7896677851676941
+                },
+                {
+                    "autor": "@Fernandes.amg0",
+                    "texto": "Imagina o Milto jogando dark souls 2 KAAKAKAKAKAKAAKAKAKA",
+                    "sentimento": "neutral",
+                    "score": 0.4962593913078308
+                },
+                {
+                    "autor": "@0VER06",
+                    "texto": "Se ele jogasse Dark Souls 3 ele ia Desistir real",
+                    "sentimento": "neutral",
+                    "score": 0.4440566301345825
+                },
+                {
+                    "autor": "@daviaguiar4294",
+                    "texto": "Bem agora que acabei de f1 ele vai e posta, brabo demais lek joga a DLC depois!!!",
+                    "sentimento": "positive",
+                    "score": 0.8173782229423523
+                },
+                {
+                    "autor": "@tiagoperez4881",
+                    "texto": "16:53 \"será q esse bicho dá xp?\" meu magro, esse é o melhor ponto pra pegar xp do jogo",
+                    "sentimento": "positive",
+                    "score": 0.6900383234024048
+                },
+                {
+                    "autor": "@camaradasant",
+                    "texto": "QUEREMOS MARSELAO",
+                    "sentimento": "neutral",
+                    "score": 0.5063706636428833
+                },
+                {
+                    "autor": "@comekanetta",
+                    "texto": "ele descobrindo o farm dos sapo com as proprias moes que fofinho <3",
+                    "sentimento": "positive",
+                    "score": 0.813005268573761
+                },
+                {
+                    "autor": "@leandrolamego6691",
+                    "texto": "O Farm Reverso do cabra kkkkkkkk",
+                    "sentimento": "neutral",
+                    "score": 0.6120947599411011
+                },
+                {
+                    "autor": "@isaiaslbz",
+                    "texto": "Por um momento eu li Marselão 😞",
+                    "sentimento": "negative",
+                    "score": 0.8565047383308411
+                },
+                {
+                    "autor": "@DaviZard_",
+                    "texto": "farmando umas auras",
+                    "sentimento": "neutral",
+                    "score": 0.6789712309837341
+                },
+                {
+                    "autor": "@katttharsis",
+                    "texto": "é muito magrao em muito pouco tempo milto, calma bodao",
+                    "sentimento": "negative",
+                    "score": 0.7342467904090881
+                },
+                {
+                    "autor": "@lucas-ee9rl",
+                    "texto": "rdr 2 nada ne seu gay",
+                    "sentimento": "neutral",
+                    "score": 0.4068416953086853
+                },
+                {
+                    "autor": "@Inumaki_33",
+                    "texto": "O Marselão ficou pra Jesus Cristo, logo logo é o magreza absoluta",
+                    "sentimento": "positive",
+                    "score": 0.6700444221496582
+                },
+                {
+                    "autor": "@willianschade1810",
+                    "texto": "O magrão vai pra DLC do Elden?",
+                    "sentimento": "neutral",
+                    "score": 0.8835403919219971
+                },
+                {
+                    "autor": "@biguidinho",
+                    "texto": "mim chama de magricelo",
+                    "sentimento": "neutral",
+                    "score": 0.45635056495666504
+                },
+                {
+                    "autor": "@Luiz_Gustavo_OFC",
+                    "texto": "Es ó Finíssimo",
+                    "sentimento": "positive",
+                    "score": 0.4506964683532715
+                },
+                {
+                    "autor": "@pucasleixoto",
+                    "texto": "É O PISCAS",
+                    "sentimento": "negative",
+                    "score": 0.8329128623008728
+                },
+                {
+                    "autor": "@crazycookie7494",
+                    "texto": "magrão e suas aventuras gulosas.",
+                    "sentimento": "neutral",
+                    "score": 0.38256123661994934
+                },
+                {
+                    "autor": "@HARV_Legends",
+                    "texto": "Me chama de magrãoooo🫪🫪🫪",
+                    "sentimento": "negative",
+                    "score": 0.42895588278770447
+                },
+                {
+                    "autor": "@Rafael-we5fx",
+                    "texto": "Magrão farmando 80k",
+                    "sentimento": "neutral",
+                    "score": 0.6916415095329285
+                },
+                {
+                    "autor": "@otaldoblindadopordeus74",
+                    "texto": "frisquila",
+                    "sentimento": "neutral",
+                    "score": 0.41760605573654175
+                },
+                {
+                    "autor": "@softdrag",
+                    "texto": "ouvi histórias sobre um ser de magreza avassaladora",
+                    "sentimento": "positive",
+                    "score": 0.5200132727622986
+                },
+                {
+                    "autor": "@jubiOff",
+                    "texto": "Mim chama de magressA",
+                    "sentimento": "negative",
+                    "score": 0.7592121958732605
+                },
+                {
+                    "autor": "@feijão_com_farinnha",
+                    "texto": "por acaso eu ouvi mogg? 😱🥶🔥🔥🔥🔥🥵🤤",
+                    "sentimento": "positive",
+                    "score": 0.5289562940597534
+                },
+                {
+                    "autor": "@ayanokenshi",
+                    "texto": "Alexa preparar latinha pitu",
+                    "sentimento": "neutral",
+                    "score": 0.6457452774047852
+                },
+                {
+                    "autor": "@SalamanderFPS",
+                    "texto": "Desde que o Magrão foi pego pela Xana frenética a vida do milton virou um caos...",
+                    "sentimento": "negative",
+                    "score": 0.9495494961738586
+                },
+                {
+                    "autor": "@diggobarreto",
+                    "texto": "Mim chama de magraummm??",
+                    "sentimento": "neutral",
+                    "score": 0.4988304376602173
+                },
+                {
+                    "autor": "@kaiquewargyn",
+                    "texto": "Já que vc ta precisando muito de dinheiro por conta dos processos, joga The Last of Us",
+                    "sentimento": "neutral",
+                    "score": 0.6111711859703064
+                },
+                {
+                    "autor": "@Funnyvalentine0901",
+                    "texto": "O magro sempre prevalece,a magreza sempre vence",
+                    "sentimento": "neutral",
+                    "score": 0.44461867213249207
+                },
+                {
+                    "autor": "@diggobarreto",
+                    "texto": "09:06 mogado",
+                    "sentimento": "neutral",
+                    "score": 0.6069685816764832
+                },
+                {
+                    "autor": "@rapidocaido",
+                    "texto": "Magraum",
+                    "sentimento": "neutral",
+                    "score": 0.4197362959384918
+                },
+                {
+                    "autor": "@okievista",
+                    "texto": "0 views o magrão tá flopado",
+                    "sentimento": "negative",
+                    "score": 0.9191370606422424
+                },
+                {
+                    "autor": "@JackSal土",
+                    "texto": "TUDO COMEÇA PELO MAGRO",
+                    "sentimento": "neutral",
+                    "score": 0.5270095467567444
+                },
+                {
+                    "autor": "@LegendaryForwards",
+                    "texto": "magraooooo",
+                    "sentimento": "negative",
+                    "score": 0.3667818009853363
+                },
+                {
+                    "autor": "@MANOMGM7",
+                    "texto": "Salve",
+                    "sentimento": "positive",
+                    "score": 0.3942405879497528
+                },
+                {
+                    "autor": "@serelepe11",
+                    "texto": "Magro",
+                    "sentimento": "neutral",
+                    "score": 0.4068308472633362
+                },
+                {
+                    "autor": "@RoseBobe2",
+                    "texto": "Miseravel",
+                    "sentimento": "negative",
+                    "score": 0.723295271396637
+                },
+                {
+                    "autor": "@marcosxtremeloko",
+                    "texto": "Nos chame de Magrão",
+                    "sentimento": "neutral",
+                    "score": 0.48328980803489685
+                },
+                {
+                    "autor": "@serelepe11",
+                    "texto": "Jj",
+                    "sentimento": "neutral",
+                    "score": 0.46715766191482544
+                },
+                {
+                    "autor": "@jaosempresencapaterna",
+                    "texto": "MAGRAUM",
+                    "sentimento": "neutral",
+                    "score": 0.3532622754573822
+                },
+                {
+                    "autor": "@Bodinhasixseven",
+                    "texto": "Magraaaaaao",
+                    "sentimento": "positive",
+                    "score": 0.42501863837242126
+                }
+            ]
         }
     ]
 }

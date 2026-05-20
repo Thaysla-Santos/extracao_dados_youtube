@@ -3,6 +3,9 @@ from transformers import pipeline
 from googleapiclient.discovery import build
 import json
 
+from analise import gerar_grafico_engajamento
+from comentarios import gerar_grafico_sentimentos
+
 app = Flask(__name__)
 
 # ==========================================
@@ -70,6 +73,8 @@ def analisar_canal(nome_canal):
             "negative": 0
         }
 
+        comentariosLista = []
+
         videoId = v["id"]["videoId"]
 
         titulo = v["snippet"]["title"]
@@ -90,7 +95,10 @@ def analisar_canal(nome_canal):
 
             for c in comentariosBusca["items"]:
 
-                texto = c["snippet"]["topLevelComment"]["snippet"]["textOriginal"]
+                snippet = c["snippet"]["topLevelComment"]["snippet"]
+
+                texto = snippet["textOriginal"]
+                autor = snippet.get("authorDisplayName", "")
 
                 sentimento = analisador(texto)[0]
 
@@ -100,14 +108,24 @@ def analisar_canal(nome_canal):
                 if sentimento["label"] == "positive":
 
                     labelComentarios["positive"] += 1
+                    sentimentoLabel = "positive"
 
                 elif sentimento["label"] == "neutral":
 
                     labelComentarios["neutral"] += 1
+                    sentimentoLabel = "neutral"
 
                 else:
 
                     labelComentarios["negative"] += 1
+                    sentimentoLabel = "negative"
+
+                comentariosLista.append({
+                    "autor": autor,
+                    "texto": texto,
+                    "sentimento": sentimentoLabel,
+                    "score": sentimento["score"]
+                })
 
         except:
             pass
@@ -139,7 +157,9 @@ def analisar_canal(nome_canal):
             "quantidadeComentarios":
                 quantidadeComentarios,
 
-            "sentimentos": labelComentarios
+            "sentimentos": labelComentarios,
+
+            "comentarios": comentariosLista
         })
 
     dados = {
@@ -189,9 +209,14 @@ def analisar():
             erro=dados["erro"]
         )
 
+    grafico_engajamento = gerar_grafico_engajamento(dados["videos"])
+    grafico_sentimentos = gerar_grafico_sentimentos(dados["videos"])
+
     return render_template(
         "index.html",
-        videos=dados["videos"]
+        videos=dados["videos"],
+        grafico_engajamento=grafico_engajamento,
+        grafico_sentimentos=grafico_sentimentos
     )
 
 # ==========================================
