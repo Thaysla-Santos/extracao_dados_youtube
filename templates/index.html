@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise de Canal do YouTube</title>
+</head>
+<body>
+
+    <h1>Análise de Canal do YouTube</h1>
+
+    <form action="/analisar" method="POST">
+
+        <label>
+            Nome do Canal:
+        </label>
+
+        <input 
+            type="text" 
+            name="canal"
+            placeholder="Ex: mkbhd"
+            required
+        >
+
+        <button type="submit">
+            Analisar
+        </button>
+
+    </form>
+
+    <hr>
+
+    {% if videos %}
+
+        <h2>Resultados</h2>
+
+        {% for video in videos %}
+
+            <div>
+
+                <h3>{{ video.titulo }}</h3>
+
+                <p>
+                    <strong>Link:</strong>
+                    <a href="{{ video.url }}" target="_blank">
+                        Abrir vídeo
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Views:</strong>
+                    {{ video.estatisticas.viewCount }}
+                </p>
+
+                <p>
+                    <strong>Likes:</strong>
+                    {{ video.estatisticas.likeCount }}
+                </p>
+
+                <p>
+                    <strong>Comentários:</strong>
+                    {{ video.estatisticas.commentCount }}
+                </p>
+
+                <p>
+                    <strong>Sentimentos:</strong>
+                </p>
+
+                <ul>
+                    <li>
+                        Positivos:
+                        {{ video.sentimentos.positive }}
+                    </li>
+
+                    <li>
+                        Neutros:
+                        {{ video.sentimentos.neutral }}
+                    </li>
+
+                    <li>
+                        Negativos:
+                        {{ video.sentimentos.negative }}
+                    </li>
+                </ul>
+
+                <hr>
+
+            </div>
+
+        {% endfor %}
+
+    {% endif %}
+
+</body>
+</html>

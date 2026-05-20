@@ -1,0 +1,40 @@
+{
+    "videos": [
+        {
+            "videoId": "TaxH7Xtkq-k",
+            "titulo": "QUANTO VALE A SELEÇÃO BRASILEIRA COM O NEYMAR? #shorts",
+            "url": "https://youtube.com/watch?v=TaxH7Xtkq-k",
+            "estatisticas": {
+                "viewCount": "1154",
+                "likeCount": "83",
+                "favoriteCount": "0",
+                "commentCount": "4"
+            },
+            "scoreComentarios": 0.6194914430379868,
+            "quantidadeComentarios": 4,
+            "sentimentos": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 3
+            }
+        },
+        {
+            "videoId": "q6HPkWlko18",
+            "titulo": "Os ÚNICOS 15 JEITOS de GANHAR DINHEIRO COM IA em 2026",
+            "url": "https://youtube.com/watch?v=q6HPkWlko18",
+            "estatisticas": {
+                "viewCount": "873",
+                "likeCount": "89",
+                "favoriteCount": "0",
+                "commentCount": "7"
+            },
+            "scoreComentarios": 0.5896369636058807,
+            "quantidadeComentarios": 5,
+            "sentimentos": {
+                "positive": 1,
+                "neutral": 2,
+                "negative": 2
+            }
+        }
+    ]
+}
