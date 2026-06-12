@@ -1,10 +1,11 @@
+import os
+
 from flask import Flask, jsonify, render_template, request
 from transformers import pipeline
 from googleapiclient.discovery import build
-import json
 
-from analise import gerar_grafico_engajamento
-from comentarios import gerar_grafico_sentimentos
+from backend.analise import gerar_grafico_engajamento
+from backend.comentarios import gerar_grafico_sentimentos
 
 app = Flask(__name__)
 
@@ -12,7 +13,9 @@ app = Flask(__name__)
 # SUA API KEY DO YOUTUBE
 # ==========================================
 
-api_key = "AIzaSyBZt1mlS3KyzAqCZ2-CC1y2cPk0XUXtG9U"
+api_key = os.environ.get("YOUTUBE_API_KEY")
+if not api_key:
+    raise RuntimeError("Defina a variável YOUTUBE_API_KEY")
 
 # ==========================================
 # MODELO DE IA
@@ -162,25 +165,7 @@ def analisar_canal(nome_canal):
             "comentarios": comentariosLista
         })
 
-    dados = {
-        "videos": videos
-    }
-
-    # salva json
-    with open(
-        "dados.json",
-        "w",
-        encoding="utf-8"
-    ) as arquivo:
-
-        json.dump(
-            dados,
-            arquivo,
-            ensure_ascii=False,
-            indent=4
-        )
-
-    return dados
+    return {"videos": videos}
 
 # ==========================================
 # TELA INICIAL
@@ -234,4 +219,5 @@ def api(nome_canal):
 # INICIAR SERVIDOR
 # ==========================================
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
