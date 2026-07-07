@@ -1,5 +1,6 @@
 import os
-
+import isodate
+from datetime import datetime, timezone, timedelta
 from flask import Flask, jsonify, render_template, request
 from transformers import pipeline
 from googleapiclient.discovery import build
@@ -30,7 +31,7 @@ analisador = pipeline(
 # FUNÇÃO PRINCIPAL DE ANÁLISE
 # ==========================================
 
-def analisar_canal(nome_canal):
+def analisar_canal(nome_canal, ignorar_curtos=True):
 
     youtube = build(
         "youtube",
@@ -54,13 +55,13 @@ def analisar_canal(nome_canal):
 
     channel_id = search["items"][0]["snippet"]["channelId"]
 
-    # busca vídeos
+
     videosBusca = youtube.search().list(
         part="snippet",
         channelId=channel_id,
         type="video",
         order="date",
-        maxResults=2
+        maxResults=20
     ).execute()
 
     videos = []
@@ -84,9 +85,16 @@ def analisar_canal(nome_canal):
 
         # estatísticas do vídeo
         estatisticas = youtube.videos().list(
-            part="statistics",
+            part="statistics, contentDetails",
             id=videoId
         ).execute()
+
+        duracao = estatisticas["items"][0]["contentDetails"]["duration"]
+        duracao = isodate.parse_duration(duracao)
+        duracao = duracao.total_seconds()
+        
+        if ignorar_curtos and duracao < 180:
+            continue
 
         try:
 
@@ -162,9 +170,12 @@ def analisar_canal(nome_canal):
 
             "sentimentos": labelComentarios,
 
-            "comentarios": comentariosLista
+            "comentarios": comentariosLista,
         })
 
+        if(len(videos) >= 2):
+            break
+    
     return {"videos": videos}
 
 # ==========================================
@@ -184,25 +195,21 @@ def home():
 def analisar():
 
     nome_canal = request.form["canal"]
+    ignorar_curtos = request.form.get("ignorar_curtos") == "1"
 
-    dados = analisar_canal(nome_canal)
-
+    dados = analisar_canal(nome_canal, ignorar_curtos)
     if "erro" in dados:
 
-        return render_template(
-            "index.html",
-            erro=dados["erro"]
-        )
+        return jsonify({"erro": dados["erro"]}), 404
 
     grafico_engajamento = gerar_grafico_engajamento(dados["videos"])
     grafico_sentimentos = gerar_grafico_sentimentos(dados["videos"])
 
-    return render_template(
-        "index.html",
-        videos=dados["videos"],
-        grafico_engajamento=grafico_engajamento,
-        grafico_sentimentos=grafico_sentimentos
-    )
+    return jsonify({
+        "videos": dados["videos"],
+        "grafico_engajamento": grafico_engajamento,
+        "grafico_sentimentos": grafico_sentimentos
+    })
 
 # ==========================================
 # ROTA JSON
@@ -220,4 +227,4 @@ def api(nome_canal):
 # ==========================================
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)
