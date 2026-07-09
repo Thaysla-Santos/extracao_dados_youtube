@@ -16,7 +16,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik"
-      - "traefik.http.routers.youtube.rule=Host(`youtube-metrics.vps-bruno-gomes.com`)"
+      - "traefik.http.routers.youtube.rule=Host(`youtubemetrics.com.br`)"
       - "traefik.http.routers.youtube.entrypoints=websecure"
       - "traefik.http.routers.youtube.tls.certresolver=letsencrypt"
       - "traefik.http.routers.youtube.service=youtube"
