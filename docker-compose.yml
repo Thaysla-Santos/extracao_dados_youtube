@@ -3,9 +3,28 @@ services:
     build:
       context: .
       dockerfile: backend/Dockerfile
-    ports:
-      - "5000:5000"
+    expose:
+      - "5000"
     env_file:
       - .env
     volumes:
       - ./backend:/app/backend
+    networks:
+      - default
+      - traefik
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik"
+      - "traefik.http.routers.youtube.rule=Host(`youtube-metrics.vps-bruno-gomes.com`)"
+      - "traefik.http.routers.youtube.entrypoints=websecure"
+      - "traefik.http.routers.youtube.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.youtube.service=youtube"
+      - "traefik.http.services.youtube.loadbalancer.server.port=5000"
+      - "traefik.http.services.youtube.loadbalancer.server.scheme=http"
+
+networks:
+  default:
+    driver: bridge
+  traefik:
+    external: true
