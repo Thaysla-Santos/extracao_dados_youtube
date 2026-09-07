@@ -55,12 +55,19 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
 
     channel_id = search["items"][0]["snippet"]["channelId"]
 
+    canal = youtube.channels().list(
+        part="contentDetails",
+        id=channel_id
+    ).execute()
 
-    videosBusca = youtube.search().list(
+    if not canal["items"]:
+        return {"erro": "Canal não encontrado"}
+
+    uploads_id = canal["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+
+    videosBusca = youtube.playlistItems().list(
         part="snippet",
-        channelId=channel_id,
-        type="video",
-        order="date",
+        playlistId=uploads_id,
         maxResults=20
     ).execute()
 
@@ -79,7 +86,7 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
 
         comentariosLista = []
 
-        videoId = v["id"]["videoId"]
+        videoId = v["snippet"]["resourceId"]["videoId"]
 
         titulo = v["snippet"]["title"]
 
@@ -178,6 +185,135 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
     
     return {"videos": videos}
 
+
+def analisar_videos(link_video_1, link_video_2):
+
+    youtube = build(
+        "youtube",
+        "v3",
+        developerKey=api_key
+    )
+
+    videos = []
+
+    for link in [link_video_1, link_video_2]:
+
+        if link == "":
+            continue
+
+        if "v=" in link:
+            videoId = link.split("v=")[1].split("&")[0]
+        elif "youtu.be/" in link:
+            videoId = link.split("youtu.be/")[1].split("?")[0]
+        elif "shorts/" in link:
+            videoId = link.split("shorts/")[1].split("?")[0].split("/")[0]
+        else:
+            videoId = link.strip()
+
+        quantidadeComentarios = 0
+        scoreComentarios = 0
+
+        labelComentarios = {
+            "positive": 0,
+            "neutral": 0,
+            "negative": 0
+        }
+
+        comentariosLista = []
+
+        estatisticas = youtube.videos().list(
+            part="statistics, contentDetails, snippet",
+            id=videoId
+        ).execute()
+
+        if not estatisticas["items"]:
+            continue
+
+        titulo = estatisticas["items"][0]["snippet"]["title"]
+
+        try:
+
+            comentariosBusca = youtube.commentThreads().list(
+                part="snippet",
+                videoId=videoId,
+                maxResults=200
+            ).execute()
+
+            for c in comentariosBusca["items"]:
+
+                snippet = c["snippet"]["topLevelComment"]["snippet"]
+
+                texto = snippet["textOriginal"]
+                autor = snippet.get("authorDisplayName", "")
+
+                sentimento = analisador(texto)[0]
+
+                quantidadeComentarios += 1
+                scoreComentarios += sentimento["score"]
+
+                if sentimento["label"] == "positive":
+
+                    labelComentarios["positive"] += 1
+                    sentimentoLabel = "positive"
+
+                elif sentimento["label"] == "neutral":
+
+                    labelComentarios["neutral"] += 1
+                    sentimentoLabel = "neutral"
+
+                else:
+
+                    labelComentarios["negative"] += 1
+                    sentimentoLabel = "negative"
+
+                comentariosLista.append({
+                    "autor": autor,
+                    "texto": texto,
+                    "sentimento": sentimentoLabel,
+                    "score": sentimento["score"]
+                })
+
+        except:
+            pass
+
+        if quantidadeComentarios > 0:
+
+            scoreComentarios = (
+                scoreComentarios / quantidadeComentarios
+            )
+
+        else:
+
+            scoreComentarios = 0
+
+        videos.append({
+
+            "videoId": videoId,
+
+            "titulo": titulo,
+
+            "url": f"https://youtube.com/watch?v={videoId}",
+
+            "estatisticas":
+                estatisticas["items"][0]["statistics"],
+
+            "scoreComentarios": scoreComentarios,
+
+            "quantidadeComentarios":
+                quantidadeComentarios,
+
+            "sentimentos": labelComentarios,
+
+            "comentarios": comentariosLista,
+        })
+
+    if not videos:
+
+        return {
+            "erro": "Vídeo não encontrado"
+        }
+
+    return {"videos": videos}
 # ==========================================
 # TELA INICIAL
 # ==========================================
@@ -194,12 +330,16 @@ def home():
 @app.route("/analisar", methods=["POST"])
 def analisar():
 
-    nome_canal = request.form["canal"]
+    nome_canal = request.form.get("canal", "")
+    link_video_1 = request.form.get("link_video_1", "")
+    link_video_2 = request.form.get("link_video_2", "")
     ignorar_curtos = request.form.get("ignorar_curtos") == "1"
 
-    dados = analisar_canal(nome_canal, ignorar_curtos)
+    if link_video_1 != "" or link_video_2 != "":
+        dados = analisar_videos(link_video_1, link_video_2)
+    else:
+        dados = analisar_canal(nome_canal, ignorar_curtos)
     if "erro" in dados:
-
         return jsonify({"erro": dados["erro"]}), 404
 
     grafico_engajamento = gerar_grafico_engajamento(dados["videos"])

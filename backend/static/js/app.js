@@ -1,5 +1,6 @@
 const form = document.getElementById('searchForm');
 const submitBtn = document.getElementById('submitBtn');
+const submitButtons = document.querySelectorAll('.js-submit-btn');
 const loading = document.getElementById('loading');
 const errorBox = document.getElementById('errorBox');
 const emptyState = document.getElementById('emptyState');
@@ -30,20 +31,24 @@ function formatNumber(value) {
 function setLoading(isLoading) {
     if (isLoading) {
         loading.classList.add('active');
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = `
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="2.5"
-                 stroke-linecap="round" stroke-linejoin="round"
-                 style="animation: spin 0.8s linear infinite;">
-                <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
-            </svg>
-            Analisando...
-        `;
+        submitButtons.forEach((btn) => {
+            btn.disabled = true;
+            btn.innerHTML = `
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     style="animation: spin 0.8s linear infinite;">
+                    <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
+                </svg>
+                Analisando...
+            `;
+        });
     } else {
         loading.classList.remove('active');
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = submitBtnDefault;
+        submitButtons.forEach((btn) => {
+            btn.disabled = false;
+            btn.innerHTML = submitBtnDefault;
+        });
     }
 }
 
@@ -376,9 +381,54 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// ===== LINKS DE VÍDEOS =====
+const enviarLinks = document.getElementById('enviarLinks');
+const linksBlock = document.getElementById('linksBlock');
+const canalBlock = document.getElementById('canalBlock');
+const canalInput = document.getElementById('canalInput');
+const handleHelpBtn = document.getElementById('handleHelp');
+const formOptions = document.getElementById('formOptions');
+const linkVideo1 = document.getElementById('linkVideo1');
+const linkVideo2 = document.getElementById('linkVideo2');
+
+function setLinksEnabled(enabled) {
+    if (linksBlock) linksBlock.hidden = !enabled;
+    if (canalBlock) canalBlock.hidden = enabled;
+    if (handleHelpBtn) handleHelpBtn.hidden = enabled;
+    if (formOptions) formOptions.hidden = enabled;
+
+    if (canalInput) {
+        canalInput.required = !enabled;
+        if (enabled) canalInput.value = '';
+    }
+
+    [linkVideo1, linkVideo2].forEach((input) => {
+        if (!input) return;
+        input.disabled = !enabled;
+        if (!enabled) input.value = '';
+    });
+}
+
+if (enviarLinks) {
+    enviarLinks.addEventListener('change', () => {
+        setLinksEnabled(enviarLinks.checked);
+    });
+}
+
 // ===== FORM SUBMIT VIA FETCH =====
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    if (enviarLinks && enviarLinks.checked) {
+        const hasLink = [linkVideo1, linkVideo2].some(
+            (input) => input && input.value.trim()
+        );
+
+        if (!hasLink) {
+            showError('Informe pelo menos um link de vídeo.');
+            return;
+        }
+    }
 
     clearError();
     resultsContainer.innerHTML = '';
