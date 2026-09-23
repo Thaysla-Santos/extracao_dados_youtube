@@ -8,12 +8,6 @@ const resultsContainer = document.getElementById('results');
 
 const submitBtnDefault = submitBtn.innerHTML;
 
-const sentimentTitles = {
-    positive: 'Comentários Positivos',
-    neutral: 'Comentários Neutros',
-    negative: 'Comentários Negativos'
-};
-
 function escapeHtml(value) {
     return String(value ?? '')
         .replace(/&/g, '&amp;')
@@ -139,16 +133,6 @@ function renderCharts(graficoEngajamento, graficoSentimentos) {
     `;
 }
 
-function renderComments(comentarios) {
-    return (comentarios || []).map(c => `
-        <div class="comment ${escapeHtml(c.sentimento)}"
-             data-sentiment="${escapeHtml(c.sentimento)}" hidden>
-            ${c.autor ? `<div class="comment-author">${escapeHtml(c.autor)}</div>` : ''}
-            <div class="comment-text">${escapeHtml(c.texto)}</div>
-        </div>
-    `).join('');
-}
-
 function renderSentimentBadge(pos, neu, neg) {
     if (pos >= neg && pos >= neu) {
         return '<span class="sentiment-badge badge-positive">Positivo</span>';
@@ -182,34 +166,18 @@ function renderVideoCard(video) {
             </div>
 
             <div class="sentiment-legend">
-                <button type="button" class="legend-item legend-positive"
-                        data-sentiment="positive" ${pos === 0 ? 'disabled' : ''}
-                        title="Ver comentários positivos">
+                <span class="legend-item legend-positive">
                     <span class="legend-dot dot-positive"></span>
                     Positivos: <strong>${pos}</strong>
-                </button>
-                <button type="button" class="legend-item legend-neutral"
-                        data-sentiment="neutral" ${neu === 0 ? 'disabled' : ''}
-                        title="Ver comentários neutros">
+                </span>
+                <span class="legend-item legend-neutral">
                     <span class="legend-dot dot-neutral"></span>
                     Neutros: <strong>${neu}</strong>
-                </button>
-                <button type="button" class="legend-item legend-negative"
-                        data-sentiment="negative" ${neg === 0 ? 'disabled' : ''}
-                        title="Ver comentários negativos">
+                </span>
+                <span class="legend-item legend-negative">
                     <span class="legend-dot dot-negative"></span>
                     Negativos: <strong>${neg}</strong>
-                </button>
-            </div>
-
-            <div class="comments-panel">
-                <div class="comments-title"></div>
-                <div class="comments-list">
-                    ${renderComments(video.comentarios)}
-                    <div class="comments-empty" hidden>
-                        Nenhum comentário deste tipo encontrado.
-                    </div>
-                </div>
+                </span>
             </div>
         `;
     } else {
@@ -286,48 +254,7 @@ function renderResults(data) {
         <div class="videos">${cardsHtml}</div>
     `;
 
-    bindCommentToggles();
     bindZoomables();
-}
-
-function bindCommentToggles() {
-    document.querySelectorAll('.video-card').forEach(card => {
-        const buttons = card.querySelectorAll('.legend-item');
-        const panel = card.querySelector('.comments-panel');
-        if (!panel) return;
-
-        const titleEl = panel.querySelector('.comments-title');
-        const emptyEl = panel.querySelector('.comments-empty');
-        const comments = panel.querySelectorAll('.comment');
-
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const sentiment = btn.dataset.sentiment;
-                const isActive = btn.classList.contains('active');
-
-                buttons.forEach(b => b.classList.remove('active'));
-
-                if (isActive) {
-                    panel.classList.remove('active');
-                    return;
-                }
-
-                btn.classList.add('active');
-                titleEl.textContent = sentimentTitles[sentiment] || '';
-
-                let visibleCount = 0;
-                comments.forEach(c => {
-                    const match = c.dataset.sentiment === sentiment;
-                    c.hidden = !match;
-                    if (match) visibleCount++;
-                });
-
-                if (emptyEl) emptyEl.hidden = visibleCount > 0;
-
-                panel.classList.add('active');
-            });
-        });
-    });
 }
 
 // ===== LIGHTBOX =====

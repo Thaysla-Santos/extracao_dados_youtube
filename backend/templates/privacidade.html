@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade · YT Metrics</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">YT <span>Metrics</span></div>
+            </div>
+        </header>
+
+        <div class="legal">
+
+            <h1>Política de Privacidade</h1>
+            <p class="legal-date">Última atualização: setembro de 2026</p>
+
+            <p>
+                O YT Metrics é um serviço de análise de sentimentos que usa
+                dados públicos da API do YouTube. Esta política explica, de
+                forma simplificada, como tratamos dados pessoais nos termos da
+                Lei nº 13.709/2018 (LGPD).
+            </p>
+
+            <h2>1. Controlador e contato</h2>
+            <p>
+                O responsável pelo tratamento dos dados é o operador deste
+                site. Pedidos relacionados a dados pessoais e dúvidas sobre
+                esta política podem ser enviados para
+                <a href="mailto:contato@youtubemetrics.com.br">contato@youtubemetrics.com.br</a>.
+            </p>
+
+            <h2>2. Quais dados são tratados</h2>
+            <p>
+                Quando você solicita a análise de um canal ou de um vídeo, o
+                serviço consulta a API pública do YouTube e obtém:
+            </p>
+            <ul>
+                <li>
+                    dados públicos do vídeo, como título, número de
+                    visualizações, curtidas e total de comentários;
+                </li>
+                <li>
+                    o texto dos comentários públicos, usado exclusivamente
+                    como entrada para o modelo de classificação.
+                </li>
+            </ul>
+            <p>
+                O nome de exibição do autor do comentário não é coletado, e o
+                texto de cada comentário é descartado da memória logo após a
+                classificação. O resultado exibido é apenas estatístico: a
+                quantidade de comentários positivos, neutros e negativos por
+                vídeo.
+            </p>
+
+            <h2>3. Finalidade e base legal</h2>
+            <p>
+                A finalidade é produzir indicadores agregados de percepção da
+                audiência sobre vídeos publicados no YouTube. O tratamento se
+                apoia no legítimo interesse do controlador (art. 7º, IX da
+                LGPD) e é limitado a dados que os próprios titulares tornaram
+                públicos, com uso restrito ao mínimo necessário para gerar as
+                estatísticas.
+            </p>
+
+            <h2>4. Armazenamento e retenção</h2>
+            <p>
+                O serviço não possui banco de dados e não armazena comentários,
+                nomes, perfis ou históricos de análise. Todo o processamento
+                acontece em memória durante a requisição, e os resultados são
+                descartados quando a resposta é enviada ao seu navegador.
+            </p>
+
+            <h2>5. Compartilhamento e transferência internacional</h2>
+            <p>
+                Para funcionar, o serviço se comunica com terceiros localizados
+                fora do Brasil, o que caracteriza transferência internacional
+                nos termos do art. 33 da LGPD:
+            </p>
+            <ul>
+                <li>
+                    <strong>Google / YouTube (EUA)</strong> — fornece a API de
+                    dados consultada pelo serviço e as imagens de capa dos
+                    vídeos, carregadas diretamente pelo seu navegador a partir
+                    dos servidores do Google.
+                </li>
+                <li>
+                    <strong>Hugging Face (EUA)</strong> — hospeda o modelo de
+                    inteligência artificial, baixado apenas durante a
+                    preparação do servidor. Nenhum comentário é enviado para
+                    lá: a classificação roda localmente.
+                </li>
+            </ul>
+            <p>
+                O serviço não utiliza cookies próprios, não faz rastreamento e
+                não possui ferramentas de análise de audiência.
+            </p>
+
+            <h2>6. Análise automatizada por inteligência artificial</h2>
+            <p>
+                A classificação de sentimentos é feita automaticamente pelo
+                modelo <em>cardiffnlp/twitter-xlm-roberta-base-sentiment</em>,
+                sem revisão humana. Como todo modelo estatístico, ele pode
+                errar — especialmente com ironia, sarcasmo, gírias e contexto
+                cultural. Os resultados são estimativas indicativas e não devem
+                ser tratados como avaliação definitiva de um vídeo, de um canal
+                ou de qualquer pessoa.
+            </p>
+
+            <h2>7. Direitos do titular</h2>
+            <p>
+                Nos termos do art. 18 da LGPD, você pode solicitar confirmação
+                da existência de tratamento, acesso, correção, anonimização,
+                eliminação e oposição ao tratamento dos seus dados. Como o
+                serviço não armazena dados pessoais, não há registros a
+                fornecer ou eliminar; ainda assim, pedidos de oposição podem
+                ser enviados para o e-mail de contato indicado no item 1 e
+                serão respondidos nos prazos legais.
+            </p>
+
+            <footer class="footer">
+                <p><a href="{{ url_for('home') }}">Voltar para a página inicial</a></p>
+            </footer>
+
+        </div>
+
+    </div>
+</body>
+</html>

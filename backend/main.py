@@ -84,8 +84,6 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
             "negative": 0
         }
 
-        comentariosLista = []
-
         videoId = v["snippet"]["resourceId"]["videoId"]
 
         titulo = v["snippet"]["title"]
@@ -115,8 +113,9 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
 
                 snippet = c["snippet"]["topLevelComment"]["snippet"]
 
+                # O texto serve apenas para classificar e é descartado em
+                # seguida. Nenhum dado pessoal entra no resultado.
                 texto = snippet["textOriginal"]
-                autor = snippet.get("authorDisplayName", "")
 
                 sentimento = analisador(texto)[0]
 
@@ -126,24 +125,14 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
                 if sentimento["label"] == "positive":
 
                     labelComentarios["positive"] += 1
-                    sentimentoLabel = "positive"
 
                 elif sentimento["label"] == "neutral":
 
                     labelComentarios["neutral"] += 1
-                    sentimentoLabel = "neutral"
 
                 else:
 
                     labelComentarios["negative"] += 1
-                    sentimentoLabel = "negative"
-
-                comentariosLista.append({
-                    "autor": autor,
-                    "texto": texto,
-                    "sentimento": sentimentoLabel,
-                    "score": sentimento["score"]
-                })
 
         except:
             pass
@@ -176,8 +165,6 @@ def analisar_canal(nome_canal, ignorar_curtos=True):
                 quantidadeComentarios,
 
             "sentimentos": labelComentarios,
-
-            "comentarios": comentariosLista,
         })
 
         if(len(videos) >= 2):
@@ -219,8 +206,6 @@ def analisar_videos(link_video_1, link_video_2):
             "negative": 0
         }
 
-        comentariosLista = []
-
         estatisticas = youtube.videos().list(
             part="statistics, contentDetails, snippet",
             id=videoId
@@ -243,8 +228,9 @@ def analisar_videos(link_video_1, link_video_2):
 
                 snippet = c["snippet"]["topLevelComment"]["snippet"]
 
+                # O texto serve apenas para classificar e é descartado em
+                # seguida. Nenhum dado pessoal entra no resultado.
                 texto = snippet["textOriginal"]
-                autor = snippet.get("authorDisplayName", "")
 
                 sentimento = analisador(texto)[0]
 
@@ -254,24 +240,14 @@ def analisar_videos(link_video_1, link_video_2):
                 if sentimento["label"] == "positive":
 
                     labelComentarios["positive"] += 1
-                    sentimentoLabel = "positive"
 
                 elif sentimento["label"] == "neutral":
 
                     labelComentarios["neutral"] += 1
-                    sentimentoLabel = "neutral"
 
                 else:
 
                     labelComentarios["negative"] += 1
-                    sentimentoLabel = "negative"
-
-                comentariosLista.append({
-                    "autor": autor,
-                    "texto": texto,
-                    "sentimento": sentimentoLabel,
-                    "score": sentimento["score"]
-                })
 
         except:
             pass
@@ -303,8 +279,6 @@ def analisar_videos(link_video_1, link_video_2):
                 quantidadeComentarios,
 
             "sentimentos": labelComentarios,
-
-            "comentarios": comentariosLista,
         })
 
     if not videos:
@@ -345,22 +319,24 @@ def analisar():
     grafico_engajamento = gerar_grafico_engajamento(dados["videos"])
     grafico_sentimentos = gerar_grafico_sentimentos(dados["videos"])
 
-    return jsonify({
+    resposta = jsonify({
         "videos": dados["videos"],
         "grafico_engajamento": grafico_engajamento,
         "grafico_sentimentos": grafico_sentimentos
     })
 
+    resposta.headers["Cache-Control"] = "no-store"
+
+    return resposta
+
 # ==========================================
-# ROTA JSON
+# POLÍTICA DE PRIVACIDADE
 # ==========================================
 
-@app.route("/api/<nome_canal>")
-def api(nome_canal):
+@app.route("/privacidade")
+def privacidade():
 
-    dados = analisar_canal(nome_canal)
-
-    return jsonify(dados)
+    return render_template("privacidade.html")
 
 # ==========================================
 # INICIAR SERVIDOR

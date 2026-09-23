@@ -31,4 +31,7 @@ ENV PYTHONPATH=/app
 
 EXPOSE 5000
 
-CMD ["python", "-m", "backend.main"]
+# --preload carrega o modelo uma vez antes de bifurcar os workers.
+# -t 300 porque a inferência sobre os comentários passa dos 30s padrão.
+CMD ["gunicorn", "--preload", "-w", "1", "--threads", "2", \
+     "-t", "300", "-b", "0.0.0.0:5000", "backend.main:app"]

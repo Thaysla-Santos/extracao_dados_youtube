@@ -1,3 +1,27 @@
+/* ===== FONTE (autohospedada, sem requisição ao Google Fonts) ===== */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('../fonts/inter-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('../fonts/inter-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+
 :root {
     --bg-primary: #0a0a0f;
     --bg-secondary: #14141c;
@@ -661,36 +685,10 @@ h1 {
     align-items: center;
     gap: 6px;
     color: var(--text-secondary);
-    background: transparent;
-    border: 1px solid transparent;
     border-radius: 8px;
     padding: 6px 10px;
-    font-family: inherit;
     font-size: 12px;
-    cursor: pointer;
-    transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
-
-.legend-item:hover:not(:disabled) {
-    background: var(--bg-secondary);
-    border-color: var(--border);
-    color: var(--text-primary);
-}
-
-.legend-item:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-}
-
-.legend-item.active {
-    background: var(--bg-secondary);
-    border-color: var(--border);
-    color: var(--text-primary);
-}
-
-.legend-item.active.legend-positive { border-color: var(--positive); }
-.legend-item.active.legend-neutral  { border-color: var(--neutral); }
-.legend-item.active.legend-negative { border-color: var(--negative); }
 
 .legend-dot {
     width: 8px;
@@ -882,78 +880,64 @@ body.lightbox-open {
     .lightbox-close { top: -10px; right: -10px; width: 36px; height: 36px; }
 }
 
-/* ===== COMMENTS PANEL ===== */
-.comments-panel {
-    margin-top: 14px;
+/* ===== RODAPÉ ===== */
+.footer {
+    margin-top: 48px;
+    padding: 24px 0;
     border-top: 1px solid var(--border);
-    padding-top: 14px;
-    display: none;
-    animation: fadeUp 0.25s ease;
-}
-
-.comments-panel.active {
-    display: block;
-}
-
-.comments-title {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.6px;
+    text-align: center;
+    font-size: 13px;
     color: var(--text-muted);
+}
+
+.footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+/* ===== PÁGINAS DE TEXTO ===== */
+.legal {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.legal h1 {
+    font-size: 28px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.legal h2 {
+    font-size: 17px;
+    color: var(--text-primary);
+    margin: 28px 0 8px;
+}
+
+.legal p, .legal li {
     margin-bottom: 10px;
 }
 
-.comments-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-height: 280px;
-    overflow-y: auto;
-    padding-right: 6px;
+.legal ul {
+    padding-left: 22px;
 }
 
-.comments-list::-webkit-scrollbar { width: 6px; }
-.comments-list::-webkit-scrollbar-track { background: transparent; }
-.comments-list::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border-radius: 3px;
-}
-.comments-list::-webkit-scrollbar-thumb:hover {
-    background: #3a3a4d;
-}
-
-.comment {
-    background: var(--bg-secondary);
-    border-left: 3px solid transparent;
-    border-radius: 8px;
-    padding: 10px 12px;
-    font-size: 13px;
-    line-height: 1.5;
+.legal a {
     color: var(--text-primary);
 }
 
-.comment.positive { border-left-color: var(--positive); }
-.comment.neutral  { border-left-color: var(--neutral); }
-.comment.negative { border-left-color: var(--negative); }
-
-.comment-author {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-}
-
-.comment-text {
-    white-space: pre-wrap;
-    word-break: break-word;
-}
-
-.comments-empty {
+.legal .legal-date {
     font-size: 13px;
     color: var(--text-muted);
-    text-align: center;
-    padding: 12px;
+    margin-bottom: 24px;
 }
 
 /* ===== EMPTY STATE ===== */
