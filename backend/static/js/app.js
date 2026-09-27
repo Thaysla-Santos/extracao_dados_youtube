@@ -66,8 +66,7 @@ function renderCharts(graficoEngajamento, graficoSentimentos) {
                     <div>
                         <div class="chart-title">Engajamento por Vídeo</div>
                         <div class="chart-subtitle">
-                            Comparativo de likes e views — barras de likes
-                            coloridas pelo sentimento predominante.
+                            Comparativo de likes e views por vídeo.
                         </div>
                     </div>
                     <div class="chart-icon">

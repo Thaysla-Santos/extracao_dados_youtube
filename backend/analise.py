@@ -14,9 +14,7 @@ import numpy as np
 COR_TEXTO          = "#f5f5f7"
 COR_TEXTO_MUTED    = "#a0a0b0"
 COR_GRID           = "#2a2a3a"
-COR_POSITIVO       = "#22c55e"
-COR_NEGATIVO       = "#ef4444"
-COR_NEUTRO_BARRA   = "#6b6b80"
+COR_LIKES          = "#22c55e"
 COR_VIEWS          = "#3b82f6"
 
 
@@ -29,25 +27,11 @@ def gerar_grafico_engajamento(videos, mostrar=False):
     titulos = []
     likes = []
     views = []
-    cores = []
 
     for v in videos:
 
         like = int(v["estatisticas"].get("likeCount", 0))
         view = int(v["estatisticas"].get("viewCount", 0))
-
-        positivos = v["sentimentos"]["positive"]
-        negativos = v["sentimentos"]["negative"]
-
-        # cor baseada no sentimento
-        if positivos > negativos:
-            cor = COR_POSITIVO
-
-        elif negativos > positivos:
-            cor = COR_NEGATIVO
-
-        else:
-            cor = COR_NEUTRO_BARRA
 
         titulo = v["titulo"]
 
@@ -57,7 +41,6 @@ def gerar_grafico_engajamento(videos, mostrar=False):
         titulos.append(titulo)
         likes.append(like)
         views.append(view)
-        cores.append(cor)
 
     # =========================
     # POSIÇÕES DAS BARRAS
@@ -81,8 +64,9 @@ def gerar_grafico_engajamento(videos, mostrar=False):
         likes,
         width=largura,
         label="Likes",
-        color=cores,
-        edgecolor="none"
+        color=COR_LIKES,
+        edgecolor="none",
+        alpha=0.9
     )
 
     # barras de views
